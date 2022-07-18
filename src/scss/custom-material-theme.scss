@@ -1,0 +1,104 @@
+@use "@angular/material" as mat;
+@import "custom-bootstrap-variables";
+@import "~bootstrap/scss/variables";
+@import "@angular/material/theming";
+
+$custom-typography: mat.define-typography-config(
+  $font-family: 'Roboto, "Helvetica Neue", sans-serif',
+  $headline: mat.define-typography-level($h1-font-size, $line-height-base, 400),
+  $title: mat.define-typography-level($h2-font-size, $line-height-base, 400),
+  $subheading-2:
+    mat.define-typography-level($h3-font-size, $line-height-base, 400),
+  $subheading-1:
+    mat.define-typography-level($h4-font-size, $line-height-base, 400),
+  $body-2: mat.define-typography-level($font-size-base, $line-height-base, 500),
+  $body-1: mat.define-typography-level($font-size-base, $line-height-base, 400),
+  $caption: mat.define-typography-level($font-size-sm, $line-height-sm, 400),
+  $button: mat.define-typography-level($font-size-base, $line-height-base, 500),
+  $input: mat.define-typography-level($font-size-sm, $line-height-sm, 400),
+);
+
+@include mat-core($custom-typography);
+//@include mat-core();
+
+$custom-primary: (
+  50: #e6effc,
+  100: #c0d7f7,
+  200: #96bdf2,
+  300: #6ba3ed,
+  400: #4c8fe9,
+  500: #2c7be5,
+  600: #2773e2,
+  700: #2168de,
+  800: #1b5eda,
+  900: #104bd3,
+  A100: #ffffff,
+  A200: #cedbff,
+  A400: #9bb5ff,
+  A700: #81a2ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$custom-secondary: (
+  50: #eef0f2,
+  100: #d5d9df,
+  200: #bac0ca,
+  300: #9ea7b4,
+  400: #8994a4,
+  500: #748194,
+  600: #6c798c,
+  700: #616e81,
+  800: #576477,
+  900: #445165,
+  A100: #c1d9ff,
+  A200: #8ebaff,
+  A400: #5b9cff,
+  A700: #418cff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$custom-primary-theme: mat.define-palette($custom-primary, 500, 100, 900);
+$custom-secondary-theme: mat.define-palette($custom-secondary, 800, 300, 200);
+
+$custom-app-theme: mat.define-light-theme(
+  $custom-primary-theme,
+  $custom-secondary-theme,
+  mat.define-palette(mat.$red-palette)
+);
+
+// $custom-app-theme: mat.define-light-theme(
+//   mat.define-palette(mat.$light-blue-palette),
+//   mat.define-palette(mat.$teal-palette, 500, 900, A100),
+//   mat.define-palette(mat.$red-palette)
+// );
+@include mat.all-component-themes($custom-app-theme);

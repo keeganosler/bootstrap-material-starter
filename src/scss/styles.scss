@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/functions";
+
+// BOOTSTRAP CUSTOMIZATIONS
+@import "custom-bootstrap-variables";
+
+// BOOTSTRAP MODULES
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/utilities/api";
+
+// MATERIAL CUSTOMIZATION
+@import "custom-material-theme";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
