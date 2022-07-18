@@ -1,0 +1,9 @@
+@import "custom-bootstrap-variables";
+
+.custom-form {
+  .mat-form-field-wrapper {
+    border: 3px solid $custom-example-background-color;
+    border-radius: 7px;
+    display: block;
+  }
+}

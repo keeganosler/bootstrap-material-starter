@@ -17,6 +17,10 @@
 // MATERIAL CUSTOMIZATION
 @import "custom-material-theme";
 
+// CUSTOM THEME FILES
+@import "_button";
+@import "_form";
+
 html,
 body {
   height: 100%;

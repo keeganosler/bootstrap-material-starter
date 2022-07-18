@@ -1,0 +1,7 @@
+@import "custom-bootstrap-variables";
+
+.custom-button {
+  background-color: $custom-example-background-color !important;
+  text-align: end !important;
+  color: $custom-example-text-color !important;
+}

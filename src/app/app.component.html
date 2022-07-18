@@ -2,15 +2,12 @@
 <div class="container">
   <div class="row">
     <div class="col" style="border: 1px solid black">
-      <p class="mt-2 mb-2 text-center">Material Buttons with Bootstrap Flex</p>
-      <div class="w-50 d-flex flex-column">
-        <button mat-raised-button color="primary" class="m-2">
-          Raised Primary
-        </button>
-        <button mat-raised-button color="accent" class="m-2">
-          Raised Accent
-        </button>
-        <button mat-flat-button color="warn" class="m-2">Flat Warn</button>
+      <p class="mt-2 mb-2 text-center">Material Buttons</p>
+      <div class="text-center">
+        <button mat-raised-button color="primary" class="m-2">Primary</button>
+        <button mat-raised-button color="accent" class="m-2">Accent</button>
+        <button mat-raised-button color="warn">Warn</button>
+        <button mat-raised-button class="custom-button m-2">Custom</button>
         <div class="d-flex align-items-center">
           <button mat-fab color="primary" class="m-2">P</button>
           <button mat-fab color="accent" class="m-2">A</button>
@@ -22,7 +19,7 @@
     <div class="col d-flex flex-column" style="border: 1px solid black">
       <p class="mt-2 mb-2 text-center">Material Form Fields</p>
       <mat-form-field appearance="outline">
-        <mat-label>Input</mat-label>
+        <mat-label>Standard Input</mat-label>
         <input matInput />
       </mat-form-field>
       <mat-form-field appearance="outline">
@@ -31,6 +28,10 @@
           <mat-option value="one">First option</mat-option>
           <mat-option value="two">Second option</mat-option>
         </mat-select>
+      </mat-form-field>
+      <mat-form-field class="custom-form" appearance="outline">
+        <mat-label>Custom Input</mat-label>
+        <input matInput />
       </mat-form-field>
     </div>
   </div>
