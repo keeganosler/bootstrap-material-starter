@@ -1,15 +1,22 @@
 @use "sass:math";
 @import "~bootstrap/scss/variables";
+@import "_typography";
 
-$font-weight-bold: 900;
-$text-muted: $gray-600;
-$custom-example-background-color: salmon;
-$custom-example-text-color: purple;
+:root {
+  --font-weight-bold: 900;
+  --text-muted: $gray-600;
+  --custom-example-background-color: salmon;
+  --custom-example-text-color: purple;
+  --small-font-size: 80%;
+}
 
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
-$small-font-size: 80%;
-$font-size-lg: $font-size-base * 1.25;
-$font-size-sm: $font-size-base * 0.875;
+$font-weight-bold: var(--font-weight-bold);
+$text-muted: var(--text-muted);
+$custom-example-background-color: var(--custom-example-background-color);
+$custom-example-text-color: var(--custom-example-text-color);
+
+$font-size-base: var(--font-size-base);
+$small-font-size: var(--small-font-size);
 
 $font-family-sans-serif: "Segoe UI", "Helvetica Neue", Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -18,13 +25,4 @@ $font-family-base: $font-family-sans-serif;
 $dt-font-weight: $font-weight-bold;
 $nested-kbd-font-weight: $font-weight-bold;
 
-$line-height-base: 1.2;
-
 $headings-font-family: $font-family-sans-serif;
-
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
-$h6-font-size: $font-size-base;

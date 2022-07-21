@@ -1,0 +1,48 @@
+@import "~bootstrap/scss/variables";
+
+// BEGIN CSS VARIABLES
+:root {
+  // FONT SIZES
+  --font-size-base: 14px;
+  --h1-font-size: 32px;
+  --h2-font-size: 28px;
+  --h3-font-size: 24px;
+  --h4-font-size: 20px;
+  --h5-font-size: 16px;
+  --caption-font-size: 12px;
+
+  // LINE HEIGHTS
+  --line-height-base: 1.2;
+  --display-line-height: 60px;
+  --h1-line-height: 40px;
+  --h2-line-height: 36px;
+  --h3-line-height: 32px;
+  --h4-line-height: 28px;
+  --h5-line-height: 24px;
+  --paragraph-line-height: 20px;
+  --caption-line-height: 16px;
+}
+
+// BEGIN SCSS VARIABLES
+
+// FONT SIZES
+$h1-font-size: var(--h1-font-size);
+$h2-font-size: var(--h2-font-size);
+$h3-font-size: var(--h3-font-size);
+$h4-font-size: var(--h4-font-size);
+$h5-font-size: var(--h5-font-size);
+$h6-font-size: var(--font-size-base);
+$paragraph-font-size: var(--font-size-base);
+$caption-font-size: var(--caption-font-size);
+
+// LINE HEIGHTS
+$line-height-base: var(--line-height-base);
+$display-line-height: var(--display-line-height);
+$h1-line-height: var(--h1-line-height);
+$h2-line-height: var(--h2-line-height);
+$h3-line-height: var(--h3-line-height);
+$h4-line-height: var(--h4-line-height);
+$h5-line-height: var(--h5-line-height);
+$h6-line-height: var(--line-height-base);
+$paragraph-line-height: var(--paragraph-line-height);
+$caption-line-height: var(--caption-line-height);
