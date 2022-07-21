@@ -1,6 +1,6 @@
 @use "sass:math";
 @import "~bootstrap/scss/variables";
-@import "_typography";
+@import "./foundation/foundation-base";
 
 :root {
   --font-weight-bold: 900;

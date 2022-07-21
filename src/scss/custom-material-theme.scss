@@ -2,7 +2,7 @@
 @import "custom-bootstrap-variables";
 @import "~bootstrap/scss/variables";
 @import "@angular/material/theming";
-@import "_typography";
+@import "./foundation/foundation-base";
 
 $custom-typography: mat.define-typography-config(
   $font-family: 'Roboto, "Helvetica Neue", sans-serif',
