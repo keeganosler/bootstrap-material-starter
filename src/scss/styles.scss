@@ -1,23 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/functions";
 
-// BOOTSTRAP CUSTOMIZATIONS
+// BOOTSTRAP CUSTOMIZATIONS - overriding bootstrap with my stuff
 @import "custom-bootstrap-variables";
 
-// BOOTSTRAP MODULES
-@import "~bootstrap/scss/maps";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/alert";
-@import "~bootstrap/scss/utilities";
-@import "~bootstrap/scss/utilities/api";
+// BOOTSTRAP MODULES - bootstrap modules being used in this app
+@import "bootstrap-modules";
 
-// MATERIAL CUSTOMIZATION
+// MATERIAL CUSTOMIZATION - customize angular material themeing
 @import "custom-material-theme";
 
-// CUSTOM THEME FILES
+// CUSTOM THEME FILES - customize individual components
 @import "./components/components-base";
 
 html,
