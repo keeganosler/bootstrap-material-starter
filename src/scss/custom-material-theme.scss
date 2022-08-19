@@ -26,76 +26,9 @@ $custom-typography: mat.define-typography-config(
 );
 
 @include mat-core($custom-typography);
-//@include mat-core();
 
-$custom-primary: (
-  50: #eae8f8,
-  100: #ccc7ed,
-  200: #aaa1e1,
-  300: #877bd5,
-  400: #6e5fcc,
-  500: #5443c3,
-  600: #4d3dbd,
-  700: #4334b5,
-  800: #3a2cae,
-  900: #291ea1,
-  A100: #dcdaff,
-  A200: #ada7ff,
-  A400: #7e74ff,
-  A700: #675aff,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #ffffff,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #ffffff,
-  ),
-);
-
-$custom-secondary: (
-  50: #eef0f2,
-  100: #d5d9df,
-  200: #bac0ca,
-  300: #9ea7b4,
-  400: #8994a4,
-  500: #748194,
-  600: #6c798c,
-  700: #616e81,
-  800: #576477,
-  900: #445165,
-  A100: #c1d9ff,
-  A200: #8ebaff,
-  A400: #5b9cff,
-  A700: #418cff,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #000000,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #000000,
-  ),
-);
-
-$custom-primary-theme: mat.define-palette($custom-primary, 500, 100, 900);
-$custom-secondary-theme: mat.define-palette($custom-secondary, 800, 300, 200);
+$custom-primary-theme: mat.define-palette($custom-primary);
+$custom-secondary-theme: mat.define-palette($custom-secondary);
 
 $custom-app-theme: mat.define-light-theme(
   $custom-primary-theme,
@@ -103,9 +36,4 @@ $custom-app-theme: mat.define-light-theme(
   mat.define-palette(mat.$red-palette)
 );
 
-// $custom-app-theme: mat.define-light-theme(
-//   mat.define-palette(mat.$light-blue-palette),
-//   mat.define-palette(mat.$teal-palette, 500, 900, A100),
-//   mat.define-palette(mat.$red-palette)
-// );
 @include mat.all-component-themes($custom-app-theme);

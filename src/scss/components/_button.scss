@@ -1,7 +1,8 @@
 @import "./../custom-bootstrap-variables.scss";
+@import "./../foundation/foundation-base";
 
 .custom-button {
-  background-color: $custom-example-background-color !important;
+  background-color: map-get($custom-primary, 200) !important;
   text-align: end !important;
   color: $custom-example-text-color !important;
 }
