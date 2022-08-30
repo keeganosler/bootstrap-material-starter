@@ -9,9 +9,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserTestingComponent } from './browser-testing/browser-testing.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, BrowserTestingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
